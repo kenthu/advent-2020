@@ -16,7 +16,7 @@ TEST_CASES = [
 
 RE_PARSE = re.compile(r"^(\d+)-(\d+) ([a-z]): ([a-z]+)$")
 
-def is_password_valid(lower: int, upper: int, char: str, password: str):
+def is_password_valid(lower: int, upper: int, char: str, password: str) -> bool:
     char_count = 0
     for letter in password:
         if char != letter:
